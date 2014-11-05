@@ -1,6 +1,9 @@
 h1 {font-size:28pt;
 color: red;
 }
+h3,ul {font-size: 16pt;
+  color:white;
+}
 body {
   background-image: url("http://www.textures.me/var/albums/Wood%20textures/Planks/wood-6.JPG?m=1360197481");
 }
