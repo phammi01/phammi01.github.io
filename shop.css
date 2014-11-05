@@ -1,7 +1,10 @@
 h1 {font-size:28pt;
-color: red;
+color: white;
 }
-h3,ul,#dkm {font-size: 16pt;
+h3,ul {font-size: 16pt;
+  color:white;
+}
+#dkm {
   color:white;
 }
 body {
