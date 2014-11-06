@@ -5,11 +5,11 @@
               color: brown;
               font-size: 19pt;
           }
-          p {
-              color: yellow;
-              font-size: 16pt;
-          }
-          h2 {color: rgb(255,180,70);
+          h2 {
+              color: lime;
               font-size: 21pt;
+          }
+          p {color: rgb(255,180,70);
+              font-size: 16pt;
           }
  
