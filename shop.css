@@ -1,3 +1,14 @@
+ul.checkmark {
+list-style-type: none;
+}
+
+ul.checkmark li:before {
+content:"\2022";
+}
+
+ul.checkmark li.mark:before {
+content:"\2713\0020";
+}
 h1 {font-size:35pt;
 color: navy;
 }
