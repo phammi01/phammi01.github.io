@@ -5,7 +5,7 @@
   border: 1px solid gray;
 }
 
-.flipped:hover, .back {
+.flipped, .back {
   transform: rotateX(180deg);
   -webkit-transform: rotateX(180deg);                  
 }
