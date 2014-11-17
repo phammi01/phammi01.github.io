@@ -1,7 +1,3 @@
-.stage {
- -webkit-perspective: 1000;                 
-}
-
 .flashcard {
   height: 300px;  
   width: 500px; 
