@@ -5,12 +5,12 @@
   border: 1px solid gray;
 }
 
-.flipped, .back {
+.flipped, .back:hover {
   transform: rotateX(180deg);
   -webkit-transform: rotateX(180deg);                  
 }
 
-.front:hover, .back {
+.front, .back:hover {
   position: absolute;                    
   -webkit-backface-visibility: hidden;           
   height: 300px;                                   
@@ -18,7 +18,7 @@
   text-align: center;                                                  
 }
 
-.front p, .back p {
+.front p, .back p:hover {
   margin-top: 25%;                                                      
   font-size: 14px;
 }
