@@ -5,12 +5,12 @@
   border: 1px solid gray;
 }
 
-.flipped, .back {
+.flipped:hover, .back {
   transform: rotateX(180deg);
   -webkit-transform: rotateX(180deg);                  
 }
 
-.front, .back {
+.front:hover, .back {
   position: absolute;                    
   -webkit-backface-visibility: hidden;           
   height: 300px;                                   
@@ -21,8 +21,4 @@
 .front p, .back p {
   margin-top: 25%;                                                      
   font-size: 14px;
-}
-
-.back: hover {
-  background-color: orange;
 }
