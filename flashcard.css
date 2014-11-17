@@ -1,29 +1,32 @@
+.stage {
+ -webkit-perspective: 1000;                   
+}
+
 .flashcard {
   height: 300px;  
   width: 500px; 
-  margin: 10% auto;      
-  border: 1px solid gray;
-} 
-
-.flipped: hover {
-  transform: rotateX(180deg);
-  -webkit-transform: rotateX(180deg);                  
+  margin: 10% auto;                                              
+  border: 1px solid gray;                            
+  box-shadow: 2px 2px 2px #000;
+  -webkit-transform-style: preserve-3d;                                 
+  transition: all 0.3s;                               
+  -webkit-transition: all 0.3s;
 }
 
-.front:hover {
+.flipped, .back {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);                      
+}
+
+.front, .back {
   position: absolute;                    
-  height: 300px;                                   
+  -webkit-backface-visibility: hidden;          
+  height: 300px;                                  
   width: 500px;
   text-align: center;                                                  
 }
-.back: {
-  position: absolute;                    
-  height: 300px;                                   
-  width: 500px;
-  text-align: center;  
-  visibility:hidden;
-}
-.front p:hover, .back p {
+
+.front p, .back p {
   margin-top: 25%;                                                      
-  font-size: 14px;
+  font-size: 3em;
 }
