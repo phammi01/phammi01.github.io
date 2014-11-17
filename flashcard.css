@@ -10,14 +10,18 @@
   -webkit-transform: rotateX(180deg);                  
 }
 
-.front:hover, .back {
+.front:hover {
   position: absolute;                    
-  -webkit-backface-visibility: hidden;           
   height: 300px;                                   
   width: 500px;
   text-align: center;                                                  
 }
-
+.back: {
+  position: absolute;                    
+  height: 300px;                                   
+  width: 500px;
+  text-align: center;  
+}
 .front p:hover, .back p {
   margin-top: 25%;                                                      
   font-size: 14px;
