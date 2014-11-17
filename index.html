@@ -1,27 +1,68 @@
 <html>
- <html>
      <head>
          <title>Home</title>
          <style>
-   
-         flashcard 1 {
+         header {
+             position: fixed;
+             background-color: #bbbbbb;
+             top: 0px;
+             left: 0px;
+             width: 100%;
+             height: 20px;
+         }
+         nav {
+             margin-top: 20px;
+             margin-bottom: 0px;
+             background-color: green;
+         }
+         nav li {
+            display: inline;
+         }
+         section {
              float: left;
              width: 20%;
              height: 500px;
-             background-color: white;
+             background-color: blue;
              color: white;
          }
-         flashcard 2 {
+         aside {
              float: left;
              width: 80%;
              height: 500px;
-             background-color: white;
+             background-color: red;
          }
-         flashcard 3 {
+         footer {
              clear: both;
-             background-color: white;
+             background-color: yellow;
+         }
+         body {
+             background-color: black;
+             margin: 0px;
          }
          </style>
 
+     </head>
+     <body>
+         <header>
+             My flash cards
+         </header>
+         <nav>
+             <ul>
+             <li>About</li>
+             <li>Random</li>
+             <li>Stuffs</li>
+             </ul>
+         </nav>
+         <section>
+             If you need to validate the correctness of the answers for the flash cards, please feel free to check on any sources
+         </section>
+         <aside>
+             This is the main content area
+             <img src="http://interactivepython.org/runestone/static/webfundamentals/_images/img_sem_elements.gif" />
+         </aside>
+         <footer>
+             If you have any question, don't hesitat to contact me us phammi01@luther.edu.
+         </footer>
+     </body>
  </html>
 
