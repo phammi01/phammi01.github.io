@@ -1,8 +1,8 @@
-.stage {
+
  .answer {
   background-color: turquoise;
  }
-.question: hover{
+.question: hover {
  display: none;
 }
 header {
