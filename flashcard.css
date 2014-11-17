@@ -3,6 +3,9 @@
   width: 500px; 
   margin: 10% auto;      
   border: 1px solid gray;
+} 
+
+.flipped: hover {
   transform: rotateX(180deg);
   -webkit-transform: rotateX(180deg);                  
 }
