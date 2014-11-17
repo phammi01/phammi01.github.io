@@ -1,5 +1,46 @@
 <html>
      <link rel="stylesheet" href="flashcard.css">
+     <style>
+     header {
+             position: relative;
+             background-color: gold;
+             top: 0px;
+             left: 0px;
+             width: 100%;
+             height: 50px;
+         }
+         nav {
+             margin-top: 0px;
+             margin-bottom: 30px;
+             background-color: silver;
+             height: 50px;
+         }
+         nav li {
+            display: inline;
+         }
+         section {
+             float: left;
+             width: 20%;
+             height: 250px;
+             background-color: lightgreen;
+             color: purple;
+         }
+         aside {
+             float: right;
+             width: 80%;
+             height: 500px;
+             background-color: lightyellow;
+         }
+         footer {
+             clear: both;
+             background-color: navy;
+             color: white;
+         }
+         body {
+             background-color: brown;
+             margin: 0px;
+         }
+         </style>
      <body>
          <header>
              <h1>My flash cards</h1>
@@ -15,9 +56,8 @@
              <h3>If you need to validate the correctness of the answers for the flash cards, please feel free to check on any sources.</h3>
          </section>
          <aside>
-        <p class="question">Proportionally, based on the ratio between the body's weight and the maximum weight capable of lifting, what is the strongest animal on this planet?</p>
-        <p class="answer">It's the Onthophagus taurus (dung beetle). The strongest males of this species can pull 1,140 times of their own body weight. To put that into perspective that would be like one of us lifting a 76.5 ton armoured tank</p>
-
+        <section class="question">Proportionally, based on the ratio between the body's weight and the maximum weight capable of lifting, what is the strongest animal on this planet?</section>
+        <section class="answer">It's the Onthophagus taurus (dung beetle). The strongest males of this species can pull 1,140 times of their own body weight. To put that into perspective that would be like one of us lifting a 76.5 ton armoured tank</section>
          </aside>
          <footer>
              If you have any question, don't hesitat to contact me at phammi01@luther.edu.
