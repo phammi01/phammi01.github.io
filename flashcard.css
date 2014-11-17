@@ -18,7 +18,7 @@
   text-align: center;                                                  
 }
 
-.front p, .back p:hover {
+.front p, .back p {
   margin-top: 25%;                                                      
   font-size: 14px;
 }
