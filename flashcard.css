@@ -1,5 +1,5 @@
 
- aside:hover .answer {
+ .answer:hover {
   background-color: turquoise;
   display:none;
  }
