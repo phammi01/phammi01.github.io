@@ -1,8 +1,8 @@
 
- .answer {
+ aside:hover.answer {
   background-color: turquoise;
+  display:none;
  }
-aside:hover .question {
+.question {
  background-color: orange;
- display: none;
 }
