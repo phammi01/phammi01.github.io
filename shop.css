@@ -29,3 +29,7 @@ background-color: lime;
 .food {
 background-color: hotpink;
 }
+ .done {
+  
+  text-decoration:line-through;
+ }
