@@ -14,8 +14,22 @@ body {
 tr#dmm {
   text-decoration: line-through;
 }
-
- .done {
-  
+.drinks {
+background-color: silver;
+}
+.clothing {
+background-color: gold;
+}
+.gifts {
+background-color: turquoise;
+}
+.hygiene {
+background-color: lime;
+}
+.food {
+background-color: pink;
+}
+.done {
   text-decoration:line-through;
  }
+ 
