@@ -5,31 +5,30 @@
 
 <title>Shopping List</title>
 <style>
- .Meat {
-  color: red;
- }
- .Vegetable {
-  color: green;
- }
- .Beauty {
-  color: orange;
- }
- .Entertainment {
-  color: blue;
- }
- .done {
-  
+.drinks {
+background-color: silver;
+}
+.clothing {
+background-color: gold;
+}
+.gifts {
+background-color: turquoise;
+}
+.hygiene {
+background-color: lime;
+}
+.food {
+background-color: hotpink;
+}
+.done {
   text-decoration:line-through;
  }
 </style>
 </head>
+
 <h1>Shopping list</h1>
 <body>
 <table id="grocerylist"></table>
- 
-  
-            
-          
 <lable for="item">Item:</lable>
 <input id="item" type="text"/>
 <lable> Category:</lable>
@@ -42,21 +41,16 @@
 </select>
 <button onclick="addItem()">Add</button>
 
-
-
-
 <script>
   addItem= function() {
     myUL=document.querySelector('#grocerylist');
     myTextbox=document.querySelector('#item');
     myCategory=document.querySelector('#category').value;
     
-    
     myli=document.createElement('li');
     myli.type="none";
     myli.classList.add(myCategory);
     myli.className=myCategory;
-    
     
     myItem=document.createTextNode(myTextbox.value);
     myTextbox.value="";
@@ -69,8 +63,8 @@
     myli.appendChild(myItem);
     myUL.appendChild(myli);
     localSave("grocerylist")
-    
   }
+  
   checkme=function() {
    
     if(this.checked) 
