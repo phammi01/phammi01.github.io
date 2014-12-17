@@ -1,6 +1,5 @@
 <html>
 <link rel="stylesheet" href="shop.css" type="text/css">
-<script src="http://reputablejournal.com/CS130/listsaver.js" type="text/javascript"> </script>
 <head><h1>grocery list</h1></head>
 <body>
 <ul id="grocerylist">
@@ -20,6 +19,7 @@
          additem = function() {
    myCb = document.createElement('input');   
    myCb.type='checkbox';
+   myCb.onclick=checkme;
    myUL = document.querySelector('#grocerylist');
    myTextbox = document.querySelector('#item');
    myLi = document.createElement('li');
@@ -28,13 +28,27 @@
    myUL.appendChild(myLi);
    myLi.appendChild(myCb);
    myTextbox.value = "";
+   localSave('grocerylist')
          }
          </script>
    <script src="grocery.js" type="text/javascript"></script>
    <script src="hhtp/reputablejournal.com/CS13/listsaver.js" type="text/javascript"></script>
    <script type="text/javascript">
-   window.onload = function () {
-          restoreList('grocerylist',doneTask);
+     checkme=function() {
+   
+    if(this.checked) 
+    {this.parentNode.classList.add("done");
+     }
+    else
+    {this.parentNode.classList.remove("done");
+     }
+    
+   }
+ 
+    window.onload=function() {
+        restoreList('grocerylist',checkme);
+    }
+         
          }
    </script>
    </body> 
